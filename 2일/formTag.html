@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base form tag</title>
+</head>
+<body>
+    <!-- 주석 ctrl + / -->
+
+    <!-- GET : 주소에 데이터를 직접 입력해 전달 -->
+    <!-- POST : 별도의 방법을 사용해 데이터를 해당 주소로 전달 -->
+
+    <form action="" method="GET">
+        <input type="text" name="search"  />
+        <input type="submit" value="전송">
+
+        <p></p>
+
+        <input type="button" value="검색"  /> <br/>
+        <input type="checkbox"  /> <br/>
+        <input type="file"  /> <br/>
+        <input type="hidden"  /> <br/>
+        <input type="image"  /> <br/>
+        <input type="password"  /> <br/>
+        <input type="radio"  /> <br/>
+        <input type="reset"  /> <br/>
+
+    </form>
+    <br/>
+
+    <form action="/join" method="post">
+        <div class="inputWrap">
+            <div class="email">
+                <span> Email </span> <input type="text" name="email"><br/>
+            </div>
+            <div class="password">
+                <span> Password </span> <input type="password" name="password"><br/>
+            </div>
+        </div>
+        <input class="sendbtn" type="submit">
+    </form>
+</body>
+</html>
